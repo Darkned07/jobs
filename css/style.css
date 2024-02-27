@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #5ca5a5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.max-container {
+  max-width: 1000px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img__two {
+  display: none;
+}
+
+.img__one__one {
+  width: 88px;
+  height: 88px;
+  margin-right: 24px;
+}
+
+.ulList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.liList {
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  background: rgb(255, 255, 255);
+  border: 5px solid rgb(92, 165, 165);
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.list__con {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  gap: 10px;
+}
+
+.list__con__one {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#company-title {
+  color: rgb(92, 165, 165);
+  font-family: "League Spartan";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+}
+
+#job-new-state {
+  border-radius: 12px;
+  background: rgb(92, 165, 165);
+  color: rgb(255, 255, 255);
+  font-family: "League Spartan";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.11px;
+  text-align: center;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+#job-featured-state {
+  border-radius: 12px;
+  background: rgb(43, 57, 57);
+  color: rgb(255, 255, 255);
+  font-family: "League Spartan";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.11px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+}
+
+#job-title {
+  color: rgb(43, 57, 57);
+  font-family: "League Spartan";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+#job-title:hover {
+  color: rgb(92, 165, 165);
+  cursor: pointer;
+}
+
+.post__p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.post {
+  color: rgb(124, 143, 143);
+  font-family: "League Spartan";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.news__one {
+  padding: 5px 7px;
+  border-radius: 4px;
+  color: rgb(92, 165, 165);
+  font-family: "League Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+}
+
+.news__one:hover {
+  background: rgb(92, 165, 165);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.hr {
+  display: none;
+}
+
+.search {
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search__con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.search__keys {
+  padding: 5px 8px;
+  color: rgb(92, 165, 165);
+  font-family: "League Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+}
+
+.close__btn {
+  margin-right: -12px;
+  border-radius: 0px 4px 4px 0px;
+  background: rgb(92, 165, 165);
+  padding: 5px 8px;
+  color: rgb(255, 255, 255);
+}
+
+.close__btn:hover {
+  background: rgb(43, 57, 57);
+  cursor: pointer;
+}
+
+.search__btn {
+  color: rgb(124, 143, 143);
+  font-family: "League Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+}
+
+.search__btn:hover {
+  cursor: pointer;
+  color: rgb(92, 165, 165);
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 760px) {
+  .liList {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  .hr {
+    display: block;
+    background: rgb(183, 196, 196);
+    height: 1px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img__one {
+    display: none;
+  }
+  .img__two {
+    display: block;
+  }
+  .ulList {
+    gap: 16px;
+  }
+}

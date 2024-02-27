@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vazifa</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="img__one"
+        src="./images/bg-header-desktop.svg"
+        width="100%"
+        alt=""
+      />
+      <img
+        class="img__two"
+        width="100%"
+        src="./images/bg-header-mobile.svg"
+        alt=""
+      />
+    </header>
+    <main class="max-container">
+      <div class="search">
+        <div class="search__con">
+          <span class="search__keys"
+            >Frontend <button class="close__btn">X</button></span
+          >
+        </div>
+        <button class="search__btn">clear</button>
+      </div>
+      <ul class="ulList" id="jobList">
+        <template>
+          <li class="liList">
+            <img class="img__one__one" id="company-logo" src="" alt="" />
+            <div class="list__con">
+              <div class="list__con__one">
+                <p id="company-title"></p>
+                <p id="job-new-state">NEW!</p>
+                <p id="job-featured-state">FEATURED</p>
+              </div>
+              <h2 id="job-title"></h2>
+              <p class="post__p">
+                <span class="post" id="postedAt"></span>
+                <span class="post" id="contract"></span>
+                <span class="post" id="location"></span>
+              </p>
+            </div>
+            <hr class="hr" />
+            <div id="filters"></div>
+          </li>
+        </template>
+      </ul>
+    </main>
+    <script type="module" src="./public/app.js"></script>
+  </body>
+</html>
